@@ -12,5 +12,6 @@ namespace PhotoSharingApp.Model
         public string Subject { get; set; }
         public string Body { get; set; }
         public int PhotosID { get; set; }
+        public virtual Photo Photo { get; set; }
     }
 }
