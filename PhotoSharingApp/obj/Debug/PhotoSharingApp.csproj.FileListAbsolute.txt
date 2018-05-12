@@ -38,3 +38,7 @@ C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\System.Web.WebPages.Raz
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\obj\Debug\PhotoSharingApp.csprojResolveAssemblyReference.cache
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\obj\Debug\PhotoSharingApp.dll
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\obj\Debug\PhotoSharingApp.pdb
+C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\EntityFramework.dll
+C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\EntityFramework.SqlServer.dll
+C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\EntityFramework.xml
+C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\EntityFramework.SqlServer.xml
