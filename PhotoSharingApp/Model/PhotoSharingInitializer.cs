@@ -11,28 +11,22 @@ namespace PhotoSharingApp.Model
     {
         protected override void Seed(PhotoSharingContext context)
         {
+            Collection<Photo> Photos = new Collection<Photo>();
             Photo MyPhoto1 = new Photo();
             MyPhoto1.Owner = "Khayri";
             MyPhoto1.Title = "khayri";
-            MyPhoto1.PhotoFile = GeneralFunctions.getPhotoFileByName("Images/khayri.jpg");
-
+            MyPhoto1.Description= "khayri";
+            MyPhoto1.CreatedDate = DateTime.Now;
+            MyPhoto1.PhotoFile = GeneralFunctions.getPhotoFileByName("C:/CSharp/p1/photoSharingApplication/Images/khayri.jpg");
+            Photos.Add(MyPhoto1);
+            context.SaveChanges();
             Photo MyPhoto2 = new Photo();
             MyPhoto2.Owner = "Khayri";
             MyPhoto2.Title = "khayri";
-            MyPhoto2.PhotoFile = GeneralFunctions.getPhotoFileByName("Image/hcen.jpg");
-
-            context.Photos.Add(MyPhoto1);
-            context.Photos.Add(MyPhoto2);
-
-            Collection<Comment> Comments = new Collection<Comment>();
-            Comment MyComment = new Comment();
-            MyComment.Body = "Test Comment";
-            MyComment.User = "khayri";
-            MyComment.PhotoID = 1;
-            MyComment.Subject = "This comment should appear in photo 1";
-
-            Comments.Add(MyComment);
-            context.Comments.AddRange(Comments);
+            MyPhoto2.CreatedDate = DateTime.Now;
+            MyPhoto2.PhotoFile = GeneralFunctions.getPhotoFileByName("C:/CSharp/p1/photoSharingApplication/Images/hcen.jpg");
+            Photos.Add(MyPhoto2);
+            context.Photos.AddRange(Photos);
             context.SaveChanges();
 
             base.Seed(context);
