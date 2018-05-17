@@ -35,7 +35,6 @@ C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\System.Web.Razor.xml
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\System.Web.WebPages.xml
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\System.Web.WebPages.Deployment.xml
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\System.Web.WebPages.Razor.xml
-C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\obj\Debug\PhotoSharingApp.csprojResolveAssemblyReference.cache
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\obj\Debug\PhotoSharingApp.dll
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\obj\Debug\PhotoSharingApp.pdb
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\EntityFramework.dll
@@ -83,3 +82,4 @@ C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\ko\System.Spatial.resou
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\ru\System.Spatial.resources.dll
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\zh-Hans\System.Spatial.resources.dll
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\zh-Hant\System.Spatial.resources.dll
+C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\obj\Debug\PhotoSharingApp.csprojResolveAssemblyReference.cache

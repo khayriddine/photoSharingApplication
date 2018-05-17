@@ -21,8 +21,8 @@ namespace PhotoSharingApp.Model
         public DateTime CreatedDate { get; set; }
         public String Owner { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
-        
-        
+        public string ImageMimeType { get; set; }
+
 
 
 
