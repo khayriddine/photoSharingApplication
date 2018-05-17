@@ -23,7 +23,10 @@
         </dt>
 
         <dd>
-            
+            @if (Model.PhotoFile != null)
+           {
+                 <img width = "800" src = "@Url.Action("GetImage", "Photo",   new { id = Model.PhotoID })" />
+           }
         </dd>
 
         <dt>

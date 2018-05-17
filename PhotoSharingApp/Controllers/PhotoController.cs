@@ -16,7 +16,7 @@ namespace PhotoSharingApp.Controllers
         // GET: Photo
         public ViewResult Index()
         {
-            return View("Index",context.Photos.ToList().ElementAt(0));
+            return View("Index",context.Photos.ToList());
         }
 
         public ActionResult Display(int? id)
@@ -89,10 +89,9 @@ namespace PhotoSharingApp.Controllers
             Photo photo = context.Photos.Find(id);
             if(photo != null)
             {
-                
                 return   File(photo.PhotoFile, photo.ImageMimeType);
             }
-
+            else 
             return null;
             
 
