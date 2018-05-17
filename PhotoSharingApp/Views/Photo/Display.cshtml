@@ -4,63 +4,14 @@
     ViewBag.Title = "Display";
 }
 
-<h2>Display</h2>
+<h2>@Model.Title</h2>
 
-<div>
-    <h4>Photo</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
+<img src="@Url.Action("GetImage" , new {id = Model.PhotoID })" width="800"/>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
+<p>@Html.DisplayFor(model => model.Description )</p>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PhotoFile)
-        </dt>
+<p>@Html.DisplayNameFor(model => model.Owner ) : @Html.DisplayFor(model => model.Owner )</p>
 
-        <dd>
-            @if (Model.PhotoFile != null)
-           {
-                 <img width = "800" src = "@Url.Action("GetImage", "Photo",   new { id = Model.PhotoID })" />
-           }
-        </dd>
+<p>@Html.DisplayNameFor(model => model.CreatedDate ) : @Html.DisplayFor(model => model.CreatedDate )</p>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CreatedDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CreatedDate)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Owner)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Owner)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ImageMimeType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ImageMimeType)
-        </dd>
-
-    </dl>
-</div>
-
+<p>@Html.ActionLink("Back to List", "Index")</p>
