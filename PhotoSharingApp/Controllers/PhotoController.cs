@@ -10,6 +10,7 @@ using System.IO;
 
 namespace PhotoSharingApp.Controllers
 {
+    [ValueReporter]
     public class PhotoController : Controller
     {
         private PhotoSharingContext context = new PhotoSharingContext();
