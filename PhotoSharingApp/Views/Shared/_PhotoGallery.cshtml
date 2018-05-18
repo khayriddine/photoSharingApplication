@@ -4,10 +4,10 @@
 {
     <h3>"@item.Title"</h3>
 
-    @if( item.PhotoFile != null)
-    {
-        <img src="@Html.Action("Photo","GetImage", new { id = item.PhotoFile})" width="200"/>
-    }
+    <img width="200"
+         src="@Url.Action("GetImage",
+ "Photo",
+ new { id = item.PhotoID })" />
 
     <p>
         Created By:

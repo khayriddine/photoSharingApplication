@@ -107,8 +107,10 @@ namespace PhotoSharingApp.Controllers
             }
             else
             {
-                int nb = (int)context.Photos.ToList().LongCount();
-                photos = context.Photos.ToList().GetRange(number, nb - 1);
+                photos = (
+                 from p in context.Photos
+                 orderby p.CreatedDate descending
+                 select p).Take(number).ToList();
             }
             return PartialView(photos);
         }
