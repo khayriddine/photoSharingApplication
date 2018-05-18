@@ -6,7 +6,7 @@ using System.Web;
 
 namespace PhotoSharingApp.Model
 {
-    public class PhotoSharingContext : System.Data.Entity.DbContext
+    public class PhotoSharingContext : DbContext
     {
         public DbSet<Photo> Photos { get; set; }
 

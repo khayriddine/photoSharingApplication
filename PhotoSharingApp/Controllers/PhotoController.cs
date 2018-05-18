@@ -17,10 +17,10 @@ namespace PhotoSharingApp.Controllers
         // GET: Photo
         public ViewResult Index()
         {
-            return View("Index",context.Photos.ToList());
+            return View("Index");
         }
 
-        public ActionResult Display(int? id)
+        public ActionResult Display(int id)
         {
             
             Photo photo = context.Photos.Find(id);
@@ -96,6 +96,21 @@ namespace PhotoSharingApp.Controllers
             return null;
             
 
+        }
+        [ChildActionOnly]
+        public ActionResult  _PhotoGallery(int number =0)
+        {
+            List<Photo> photos;
+            if (number == 0)
+            {
+                photos = context.Photos.ToList();
+            }
+            else
+            {
+                int nb = (int)context.Photos.ToList().LongCount();
+                photos = context.Photos.ToList().GetRange(number, nb - 1);
+            }
+            return PartialView(photos);
         }
 
 
