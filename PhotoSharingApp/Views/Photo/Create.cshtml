@@ -5,49 +5,58 @@
 }
 
 <h2>Create New Photo</h2>
-
-@using (Html.BeginForm("Create", "Photo", FormMethod.Post, new { enctype = "multipart/form-data" }))
+@using (Html.BeginForm("Create",
+                         "Photo", FormMethod.Post,
+                        new
+                        {
+                            enctype =
+                         "multipart/form-data"
+                        }))
 {
+    @Html.ValidationSummary(true)
     <p>
-        @Html.LabelFor(model =>
- model.Title):
-        @Html.EditorFor(model =>
- model.Title)
-        @Html.ValidationMessageFor(
+        @Html.LabelFor(
+ model => model.Title):
+        @Html.EditorFor(
+ model => model.Title) @Html.ValidationMessageFor(
  model => model.Title)
-    </p>
+        </p>
 
-    <p>
-        @Html.LabelFor(model => model.PhotoFile )
-        <input  type="file" name="Image"/>
-    </p>
+        <p>
+            @Html.LabelFor(
+ model => model.PhotoFile):
+            <input type="file" name="Image" />
+        </p>
 
-    <p>
-        @Html.LabelFor(model =>
- model.Description ):
-        @Html.EditorFor(model =>
- model.Description)
-        @Html.ValidationMessageFor(
+        <p>
+            @Html.LabelFor(
+ model => model.Description):
+            @Html.EditorFor(
  model => model.Description)
-    </p>
+            @Html.ValidationMessageFor(
+ model => model.Description)
+        </p>
+        <p>
+            @Html.LabelFor(
+ model => model.Owner):
+            @Html.DisplayFor(
+ model => model.Owner)
+        </p>
+        <p>
+            @Html.LabelFor(
+ model => model.CreatedDate):
+            @Html.DisplayFor(
+ model => model.CreatedDate)
+        </p>
 
-    <p>
-        @Html.LabelFor(model =>
- model.CreatedDate ):
-        @Html.DisplayFor(model =>
- model.Description)
-    </p>
-
-    <p>
-        <input type="submit"
-               value="Create" /> 
-
-    </p>
-    <p>
-        @Html.ActionLink("Back to List", "Index")
-    </p>
-    
+        <p>
+            <input type="submit"
+                   value="Create" />
+            @Html.ActionLink("Back to List",
+ "Index")
+        </p>
 }
+  
 
  
 

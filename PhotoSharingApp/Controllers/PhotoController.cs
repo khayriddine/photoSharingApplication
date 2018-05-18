@@ -59,7 +59,7 @@ namespace PhotoSharingApp.Controllers
 
                 context.Photos.Add(photo);
                 context.SaveChanges();
-                return View("Create", photo);
+                return RedirectToAction("Index");
             }
         }
         public ActionResult Delete(int? id)
@@ -85,12 +85,12 @@ namespace PhotoSharingApp.Controllers
             context.SaveChanges();
             return RedirectToAction("Index");
         }
-        public FileContentResult GetImage(int? id)
+        public FileContentResult GetImage(int id)
         {
             Photo photo = context.Photos.Find(id);
             if(photo != null)
             {
-                return   File(photo.PhotoFile, photo.ImageMimeType);
+                return   new FileContentResult(photo.PhotoFile, photo.ImageMimeType);
             }
             else 
             return null;
