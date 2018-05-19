@@ -7,6 +7,7 @@ using System.Globalization;
 using PhotoSharingApp.Model;
 using System.Net;
 using System.IO;
+using System.Diagnostics;
 
 namespace PhotoSharingApp.Controllers
 {
@@ -22,7 +23,7 @@ namespace PhotoSharingApp.Controllers
 
         public ActionResult Display(int id)
         {
-            
+
             Photo photo = context.Photos.Find(id);
             if (photo == null)
             {
@@ -43,25 +44,26 @@ namespace PhotoSharingApp.Controllers
             photo.CreatedDate = DateTime.Today;
             if (ModelState.IsValid)
             {
-                context.Photos.Add(photo);
-                context.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                if(image != null)
+                // context.Photos.Add(photo);
+                //context.SaveChanges();
+                //return RedirectToAction("Index");
+                //}
+                // else
+                //{
+                if (image != null)
                 {
                     photo.ImageMimeType = image.ContentType;
                     photo.PhotoFile = new byte[image.ContentLength];
-                    image.InputStream.Read(photo.PhotoFile,0,image.ContentLength);
-                    
+                    image.InputStream.Read(photo.PhotoFile, 0, image.ContentLength);
                 }
 
                 context.Photos.Add(photo);
                 context.SaveChanges();
-                return RedirectToAction("Index");
+                
             }
+            return RedirectToAction("Index");
         }
+    //}
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -83,7 +85,7 @@ namespace PhotoSharingApp.Controllers
             Photo photo = context.Photos.Find(id);
             context.Photos.Remove(photo);
             context.SaveChanges();
-            return RedirectToAction("Index");
+            return View("Index");
         }
         public FileContentResult GetImage(int id)
         {

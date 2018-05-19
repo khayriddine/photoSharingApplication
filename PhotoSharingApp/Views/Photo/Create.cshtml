@@ -25,7 +25,7 @@
         <p>
             @Html.LabelFor(
  model => model.PhotoFile):
-            <input type="file" name="Image" />
+            <input type="file" name="image" />
         </p>
 
         <p>
@@ -39,6 +39,8 @@
         <p>
             @Html.LabelFor(
  model => model.Owner):
+            @Html.EditorFor(
+ model => model.Owner)
             @Html.DisplayFor(
  model => model.Owner)
         </p>
