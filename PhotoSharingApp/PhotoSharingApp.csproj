@@ -205,6 +205,7 @@
     </Compile>
     <Compile Include="Model\Comment.cs" />
     <Compile Include="Model\GeneralFunctions.cs" />
+    <Compile Include="Model\IPhotoSharingContext.cs" />
     <Compile Include="Model\Photo.cs" />
     <Compile Include="Model\PhotoSharingContext.cs" />
     <Compile Include="Model\PhotoSharingInitializer.cs" />
