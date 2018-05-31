@@ -78,10 +78,6 @@ namespace PhotoSharingApp.Controllers
     //}
         public ActionResult Delete(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
             Photo photo = context.FindPhotoById(id);
             if (photo == null)
             {
