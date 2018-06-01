@@ -1,9 +1,14 @@
-﻿@model IEnumerable<PhotoSharingApp.Model.Photo>
+﻿@using MvcSiteMapProvider.Web.Html
+@model IEnumerable<PhotoSharingApp.Model.Photo>
 
 <title>All photos</title>
 
 <div>
     <h2>All photos</h2>
+    
+    Menu: @Html.MvcSiteMap().Menu(false, false, true)
+    Breadcrumb Trail: @Html.MvcSiteMap().SiteMapPath()
+    
     <p>
         @Html.ActionLink("Add a Photo",
  "Create", "Photo")

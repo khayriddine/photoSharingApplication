@@ -83,3 +83,9 @@ C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\ru\System.Spatial.resou
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\zh-Hans\System.Spatial.resources.dll
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\zh-Hant\System.Spatial.resources.dll
 C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\obj\Debug\PhotoSharingApp.csprojResolveAssemblyReference.cache
+C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\MvcSiteMapProvider.dll
+C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\MvcSiteMapProvider.WebActivator.dll
+C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\WebActivatorEx.dll
+C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\MvcSiteMapProvider.xml
+C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\MvcSiteMapProvider.WebActivator.xml
+C:\CSharp\p1\photoSharingApplication\PhotoSharingApp\bin\MvcSiteMapProvider.WebActivator.pdb
