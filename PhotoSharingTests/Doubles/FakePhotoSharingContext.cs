@@ -52,6 +52,11 @@ namespace PhotoSharingTests.Doubles
             return item;
         }
 
+        public Photo FindPhotoByTitle(string title)
+        {
+            throw new NotImplementedException();
+        }
+
         public int SaveChanges()
         {
             throw new NotImplementedException();

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 
@@ -45,6 +46,21 @@ namespace PhotoSharingApp.Model
         T IPhotoSharingContext.Delete<T>(T entity)
         {
             return Set<T>().Remove(entity);
+        }
+
+        Photo IPhotoSharingContext.FindPhotoByTitle(string title)
+        {
+            Photo p  = new Photo();
+            foreach(Photo pho in Photos)
+            {
+                if (pho.Title.Equals(title))
+                {
+                    Debug.WriteLine("photo.Title2");
+                    return pho;
+                }
+                    
+            }
+            return p;
         }
 
     }

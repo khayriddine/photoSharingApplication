@@ -13,11 +13,11 @@ namespace PhotoSharingTests
     public class PhotoControllerTests
     {
         [TestMethod]
-        public void Test_Index_Return_View()
+        public void TestMethod1()
         {
             var context = new FakePhotoSharingContext();
-            var controller = new PhotoController(context);
-            var result = controller.Index() as ViewResult;
+            var controller = new HomeController();
+            ViewResult result = controller.Index();
             Assert.AreEqual("Index",  result.ViewName);
         }
         [TestMethod]

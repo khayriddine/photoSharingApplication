@@ -13,7 +13,6 @@ C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\roslyn\VBCSComp
 C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\PhotoSharingTests.dll.config
 C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\PhotoSharingTests.dll
 C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\PhotoSharingTests.pdb
-C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\Microsoft.Web.Infrastructure.dll
 C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\PhotoSharingApp.dll
 C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\System.Web.Helpers.dll

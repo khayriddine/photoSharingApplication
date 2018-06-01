@@ -43,6 +43,17 @@ namespace PhotoSharingApp.Controllers
             }
             return View("Display", photo);
         }
+        public ActionResult DisplayByTitle(string title)
+        {
+            Photo photo = context.FindPhotoByTitle(title);
+            Debug.WriteLine("photo.Title");
+            Debug.WriteLine(photo.Title);
+            if (photo == null)
+            {
+                return HttpNotFound();
+            }
+            return View("Display", photo);
+        }
 
         public ActionResult Create()
         {
