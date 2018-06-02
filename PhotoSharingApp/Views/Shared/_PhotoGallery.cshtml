@@ -1,24 +1,42 @@
 ﻿@model IEnumerable<PhotoSharingApp.Model.Photo>
+<div class="container-fluid">
+    <div class="row row-margin-bottom">
+        @foreach (var item in Model)
+        {
 
-@foreach (var item in Model)
-{
-    <h3>"@item.Title"</h3>
-
-    <img width="200"
-         src="@Url.Action("GetImage",
+            <div class="col-md-5 no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-6">
+                            <img class="lib-img-show" src="@Url.Action("GetImage",
  "Photo",
- new { id = item.PhotoID })" />
+ new { id = item.PhotoID })">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="lib-row lib-header">
+                                <h3>"@item.Title"</h3>
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                <p>
+                                    Created By:
+                                    @Html.DisplayFor(modeltem => item.Owner)
+                                </p>
+                                <p>
+                                    Created On:
+                                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                                </p>
+                                <p>
+                                    @Html.ActionLink("Display", "Display", new { id = item.PhotoID })
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
 
-    <p>
-        Created By:
-        @Html.DisplayFor(modeltem => item.Owner )
-    </p>
-    <p>
-        Created On: 
-        @Html.DisplayFor(modelItem =>item.CreatedDate )
-    </p>
-    <p>
-        @Html.ActionLink("Display" , "Display" ,new { id = item.PhotoID })
-    </p>
-    
-}
+
+        }
+    </div>
+</div>

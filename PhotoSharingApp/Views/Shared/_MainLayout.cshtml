@@ -1,12 +1,15 @@
 ﻿<head>
 <title>@ViewBag.Title</title> 
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <link type="text/css" rel="stylesheet" href="~/content/PhotoSharingStyles.css" /> 
 </head>
 
 <div>
-    <h1 class="site-page-title">
-        Adventure Works Photo Sharing
-    </h1>
+    <div class="row">
+        <h4> Adventure Works Photo Sharing</h4>
+        </div>
+    <hr>
     <div class="clear-floats" /> 
     <div id="topmenu">
         @Html.MvcSiteMap().Menu(false, true, true)
