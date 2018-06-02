@@ -52,3 +52,8 @@ C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\zh-Hant\System.
 C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\obj\Debug\PhotoSharingTests.csprojResolveAssemblyReference.cache
 C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\obj\Debug\PhotoSharingTests.dll
 C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\obj\Debug\PhotoSharingTests.pdb
+C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\MvcSiteMapProvider.dll
+C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\MvcSiteMapProvider.WebActivator.dll
+C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\WebActivatorEx.dll
+C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\MvcSiteMapProvider.xml
+C:\CSharp\p1\photoSharingApplication\PhotoSharingTests\bin\Debug\MvcSiteMapProvider.WebActivator.xml
