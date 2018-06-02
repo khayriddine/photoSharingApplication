@@ -6,4 +6,13 @@
         Adventure Works Photo Sharing
     </h1>
     <div class="clear-floats" /> 
+    <div id="topmenu">
+        @Html.MvcSiteMap().Menu(false, true, true)
+    </div> 
+    <div id="breadcrumb">
+        @Html.MvcSiteMap().SiteMapPath()
+    </div> 
+    <div>
+        @RenderBody()
+    </div>
 </div>
